@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Résumé — Mashhood Ur Rehman</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body class="resume-page">
+
+  <div class="noise"></div>
+
+  <!-- TOP BAR -->
+  <header class="resume-header">
+    <a href="index.html" class="back-link">← Home</a>
+    <span class="resume-header-name">Mashhood Ur Rehman</span>
+    <a href="resume_pdf.pdf" download class="download-btn">
+      ↓ Download PDF
+    </a>
+  </header>
+
+  <div class="resume-wrap">
+
+    <!-- SIDEBAR -->
+    <aside class="resume-sidebar">
+
+      <div class="sidebar-name">
+        <p class="sidebar-role">AI / ML Engineer</p>
+        <h2>Mashhood<br/>Ur Rehman</h2>
+      </div>
+
+      <div class="sidebar-contact">
+        <a href="mailto:mashoodrehman112@gmail.com">mashoodrehman112@gmail.com</a>
+        <a href="tel:+923426229503">+92 342 622 9503</a>
+        <a href="https://github.com/MrMashood" target="_blank">github.com/MrMashood</a>
+        <a href="https://linkedin.com/in/YOUR-HANDLE" target="_blank">LinkedIn</a>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Languages</h4>
+        <p>Python, SQL</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>ML / DL</h4>
+        <p>PyTorch, TensorFlow, Hugging Face</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>LLM &amp; RAG</h4>
+        <p>LangChain, LangGraph, FAISS, Pinecone, ChromaDB</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Computer Vision</h4>
+        <p>OpenCV, SAM, DeepFace, Roboflow</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Deployment &amp; Optimization</h4>
+        <p>FastAPI, TensorRT, Quantization, Model Compression</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>MLOps</h4>
+        <p>MLflow, Docker, Airflow, Vertex AI Experiments</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Cloud &amp; Monitoring</h4>
+        <p>GCP, Vertex AI, Firebase, Grafana, RAGAS</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Automation</h4>
+        <p>n8n, Zapier, Pipedream, Dify</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Version Control</h4>
+        <p>Git, GitHub, GitHub Actions</p>
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="resume-main">
+
+      <!-- PROFILE -->
+      <section class="r-section">
+        <div class="r-section-label">Profile</div>
+        <p class="profile-text">
+          AI/ML Engineer with ~2 years of experience in Machine Learning, Deep Learning, LLMs and MLOps. 
+          Proven ability to deploy production-grade AI systems on GCP, optimize model inference using 
+          quantization and compression techniques (TensorRT FP16), and automate scalable ML pipelines 
+          using Docker, Kubernetes-backed platforms, Airflow, and cloud-native tools.
+        </p>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="r-section">
+        <div class="r-section-label">Experience</div>
+
+        <div class="r-exp">
+          <div class="r-exp-header">
+            <div>
+              <h3>AI Engineer <span class="r-company">@ Volmatica</span></h3>
+              <p class="r-location">Islamabad, Pakistan</p>
+            </div>
+            <span class="r-date">Feb 2025 — Present</span>
+          </div>
+          <ul class="r-list">
+            <li>Deployed and optimized a fine-tuned <strong>Qwen-2B</strong> model for real-time spell correction on GCP using TensorRT (FP16), achieving <strong>sub-50ms p50</strong> and sub-80ms p95 latency through execution profile tuning, batching, and concurrency optimization.</li>
+            <li>Designed a multi-container Docker workflow separating TensorRT engine build and runtime inference, persisting optimized engines to <strong>Google Cloud Storage</strong> for reproducible production deployments.</li>
+            <li>Registered models in <strong>GCP Model Registry</strong> and deployed managed endpoints on Vertex AI (Kubernetes-backed GKE) for scalable, production-ready serving.</li>
+            <li>Built end-to-end <strong>GitHub Actions CI/CD</strong> pipelines across dev/stage/prod — automating Docker builds, GCP Artifact Registry pushes, TensorRT compilation, and Vertex AI deployments.</li>
+            <li>Designed Airflow DAGs on <strong>Cloud Composer</strong> to orchestrate recommendation model evaluation pipelines with data validation gates and drift monitoring via Vertex AI Experiments.</li>
+            <li>Automated HR screening with <strong>n8n + LLM evaluation</strong>, cutting manual triage workload by ~60%.</li>
+          </ul>
+        </div>
+
+        <div class="r-exp">
+          <div class="r-exp-header">
+            <div>
+              <h3>Data Science Intern <span class="r-company">@ VentureDive</span></h3>
+              <p class="r-location">Lahore, Pakistan</p>
+            </div>
+            <span class="r-date">Nov 2024 — Jan 2025</span>
+          </div>
+          <ul class="r-list">
+            <li>Built a retail product detection pipeline using <strong>SAM instance segmentation + ResNet classification</strong>, achieving 87% recall on production datasets.</li>
+            <li>Architected a multi-agent <strong>Financial RAG system</strong> using LangGraph — DeepSeek R1 for intent/SQL generation, LLaMA 3.1 for structured report output via few-shot prompting.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="r-section">
+        <div class="r-section-label">Projects</div>
+
+        <div class="r-project">
+          <div class="r-proj-header">
+            <h3>Ecommerce Reranker <span class="r-proj-sub">— ALS Recommendation System</span></h3>
+            <div class="r-tags"><span>Python</span><span>DuckDB</span><span>ALS</span><span>Airflow</span></div>
+          </div>
+          <ul class="r-list">
+            <li>Implemented Alternating Least Squares (ALS) for reranking from behavioral signals (clicks, carts, purchases), achieving <strong>NDCG@10 of 0.826</strong> on search — a +26.3% improvement over baseline.</li>
+            <li>Built a feature engineering pipeline with DuckDB SQL, transforming raw events into confidence-weighted user-item interaction matrices.</li>
+            <li>Automated end-to-end retraining via Airflow DAG with DockerOperator and incremental data ingestion.</li>
+          </ul>
+        </div>
+
+        <div class="r-project">
+          <div class="r-proj-header">
+            <h3>EagleEye <span class="r-proj-sub">— AI Fraud Detection System</span></h3>
+            <div class="r-tags"><span>FastAPI</span><span>Gemini API</span><span>Async</span><span>Pillow</span></div>
+          </div>
+          <ul class="r-list">
+            <li>Built a production REST API detecting e-commerce listing fraud by concurrently fetching images from S3 and submitting to <strong>Google Gemini 2.5</strong>.</li>
+            <li>Returns per-image verdicts (Match / Uncertain / Mismatch) with confidence scores, aggregated into a worst-case overall verdict.</li>
+          </ul>
+        </div>
+
+        <div class="r-project">
+          <div class="r-proj-header">
+            <h3>Tasveerein <span class="r-proj-sub">— Final Year Project</span></h3>
+            <div class="r-tags"><span>Flutter</span><span>Flask</span><span>DeepFace</span><span>Firebase</span></div>
+          </div>
+          <ul class="r-list">
+            <li>Event photo-sharing platform where attendees scan a QR code, take a selfie, and instantly retrieve only their photos via face recognition.</li>
+            <li>Achieved <strong>~92% matching accuracy</strong> across albums of 500+ images with automated embedding generation and similarity indexing.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="r-section">
+        <div class="r-section-label">Education</div>
+        <div class="r-exp">
+          <div class="r-exp-header">
+            <div>
+              <h3>Bachelor of Computer Science</h3>
+              <p class="r-location">COMSATS University Islamabad</p>
+            </div>
+            <span class="r-date">Feb 2021 — Jan 2025</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

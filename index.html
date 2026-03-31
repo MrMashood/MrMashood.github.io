@@ -1,237 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mashhood Ur Rehman — AI/ML Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Mashhood Ur Rehman</title>
+  <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home-page">
 
-  <!-- Noise overlay -->
+  <canvas id="grid-canvas"></canvas>
   <div class="noise"></div>
 
-  <!-- Ambient glow -->
-  <div class="ambient"></div>
+  <main class="home-main">
 
-  <!-- NAV -->
-  <nav>
-    <span class="nav-logo">MR.</span>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-tag"><span class="dot"></span> Available for opportunities</div>
-    <h1>Mashhood<br/><em>Ur Rehman</em></h1>
-    <p class="hero-role">AI / ML Engineer</p>
-    <p class="hero-bio">
-      ~2 years deploying production-grade AI systems — from TensorRT-optimized LLMs on GCP to 
-      multi-agent RAG pipelines. I ship fast, scale smart, and keep latency honest.
-    </p>
-    <div class="hero-links">
-      <a href="mailto:mashoodrehman112@gmail.com" class="btn-primary">Get in touch</a>
-      <a href="https://github.com/MrMashood" class="btn-ghost" target="_blank">GitHub ↗</a>
-      <a href="https://linkedin.com" class="btn-ghost" target="_blank">LinkedIn ↗</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years experience</span></div>
-      <div class="stat-div"></div>
-      <div class="stat"><span class="stat-num">&lt;50ms</span><span class="stat-label">p50 inference latency</span></div>
-      <div class="stat-div"></div>
-      <div class="stat"><span class="stat-num">92%</span><span class="stat-label">Face recognition accuracy</span></div>
-    </div>
-  </section>
-
-  <!-- SKILLS MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee">
-      <span>PyTorch</span><span class="sep">·</span>
-      <span>TensorFlow</span><span class="sep">·</span>
-      <span>LangChain</span><span class="sep">·</span>
-      <span>LangGraph</span><span class="sep">·</span>
-      <span>TensorRT</span><span class="sep">·</span>
-      <span>Vertex AI</span><span class="sep">·</span>
-      <span>GCP</span><span class="sep">·</span>
-      <span>Docker</span><span class="sep">·</span>
-      <span>Kubernetes</span><span class="sep">·</span>
-      <span>Apache Airflow</span><span class="sep">·</span>
-      <span>FastAPI</span><span class="sep">·</span>
-      <span>MLflow</span><span class="sep">·</span>
-      <span>FAISS</span><span class="sep">·</span>
-      <span>Pinecone</span><span class="sep">·</span>
-      <span>Hugging Face</span><span class="sep">·</span>
-      <span>OpenCV</span><span class="sep">·</span>
-      <!-- duplicate for seamless loop -->
-      <span>PyTorch</span><span class="sep">·</span>
-      <span>TensorFlow</span><span class="sep">·</span>
-      <span>LangChain</span><span class="sep">·</span>
-      <span>LangGraph</span><span class="sep">·</span>
-      <span>TensorRT</span><span class="sep">·</span>
-      <span>Vertex AI</span><span class="sep">·</span>
-      <span>GCP</span><span class="sep">·</span>
-      <span>Docker</span><span class="sep">·</span>
-      <span>Kubernetes</span><span class="sep">·</span>
-      <span>Apache Airflow</span><span class="sep">·</span>
-      <span>FastAPI</span><span class="sep">·</span>
-      <span>MLflow</span><span class="sep">·</span>
-      <span>FAISS</span><span class="sep">·</span>
-      <span>Pinecone</span><span class="sep">·</span>
-      <span>Hugging Face</span><span class="sep">·</span>
-      <span>OpenCV</span><span class="sep">·</span>
-    </div>
-  </div>
-
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <div class="section-label"><span class="mono">01 /</span> Experience</div>
-
-    <div class="exp-card">
-      <div class="exp-header">
-        <div>
-          <h3>AI Engineer <span class="muted">@ Volmatica</span></h3>
-          <p class="exp-sub">ML / LLM Engineering · Islamabad, Pakistan</p>
-        </div>
-        <span class="exp-date">Feb 2025 — Present</span>
-      </div>
-      <ul class="exp-list">
-        <li>Deployed a fine-tuned <strong>Qwen-2B</strong> model with TensorRT FP16 on GCP, hitting <strong>&lt;50ms p50 / &lt;80ms p95</strong> latency via batching & concurrency tuning.</li>
-        <li>Designed multi-container Docker workflow separating TensorRT build and runtime, persisting engines to <strong>GCS</strong> for reproducible production deploys.</li>
-        <li>Registered models in <strong>GCP Model Registry</strong> and deployed managed endpoints on Vertex AI (GKE-backed).</li>
-        <li>Built full <strong>GitHub Actions CI/CD</strong> across dev/stage/prod — Docker builds, GCP Artifact Registry pushes, TensorRT compilation, and Vertex AI deployments.</li>
-        <li>Designed Airflow DAGs on <strong>Cloud Composer</strong> for recommendation model evaluation with drift monitoring via Vertex AI Experiments.</li>
-        <li>Automated HR screening with <strong>n8n + LLM evaluation</strong>, cutting manual triage by ~60%.</li>
-      </ul>
+    <div class="home-tag">
+      <span class="pulse-dot"></span>
+      <span>AI / ML Engineer &nbsp;·&nbsp; Islamabad, Pakistan</span>
     </div>
 
-    <div class="exp-card">
-      <div class="exp-header">
-        <div>
-          <h3>Data Science Intern <span class="muted">@ VentureDive</span></h3>
-          <p class="exp-sub">Lahore, Pakistan</p>
-        </div>
-        <span class="exp-date">Nov 2024 — Jan 2025</span>
-      </div>
-      <ul class="exp-list">
-        <li>Built a retail product detection pipeline with <strong>SAM segmentation + ResNet classification</strong>, achieving 87% recall on production data.</li>
-        <li>Architected a multi-agent <strong>Financial RAG system</strong> using LangGraph — DeepSeek R1 for intent/SQL, LLaMA 3.1 for structured report generation via few-shot prompting.</li>
-      </ul>
+    <div class="home-name-block">
+      <h1 class="home-name">
+        <span class="line-wrap"><span class="reveal-line">Mashhood</span></span>
+        <span class="line-wrap"><span class="reveal-line delay-1">Ur Rehman</span></span>
+      </h1>
+      <p class="home-descriptor reveal-fade delay-2">
+        Building production-grade AI systems —<br/>
+        LLMs, MLOps &amp; inference at scale.
+      </p>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="section-label"><span class="mono">02 /</span> Projects</div>
-
-    <div class="projects-grid">
-
-      <div class="proj-card">
-        <div class="proj-top">
-          <span class="proj-tag">Recommendation · MLOps</span>
-          <a href="#" class="proj-link">↗</a>
-        </div>
-        <h3>Ecommerce Reranker</h3>
-        <p>ALS-based recommendation system learning from behavioral signals (clicks, carts, purchases). Achieved <strong>NDCG@10 of 0.826</strong> on search — a +26.3% improvement over baseline, correcting for position bias.</p>
-        <div class="proj-stack">
-          <span>Python</span><span>DuckDB</span><span>ALS</span><span>Airflow</span><span>NumPy</span>
-        </div>
-      </div>
-
-      <div class="proj-card featured">
-        <div class="proj-top">
-          <span class="proj-tag">LLM · Vision · API</span>
-          <a href="#" class="proj-link">↗</a>
-        </div>
-        <h3>EagleEye</h3>
-        <p>Fraud detection REST API for e-commerce listings. Concurrently fetches product images from S3 and submits to <strong>Google Gemini 2.5</strong>, returning per-image verdicts (Match / Uncertain / Mismatch) with confidence scores.</p>
-        <div class="proj-stack">
-          <span>FastAPI</span><span>Gemini API</span><span>Async</span><span>Pillow</span>
-        </div>
-      </div>
-
-      <div class="proj-card">
-        <div class="proj-top">
-          <span class="proj-tag">Computer Vision · Mobile</span>
-          <a href="#" class="proj-link">↗</a>
-        </div>
-        <h3>Tasveerein</h3>
-        <p>Final year project — an event photo-sharing platform where attendees scan a QR code, take a selfie, and instantly retrieve only their photos via face recognition. <strong>~92% accuracy</strong> across albums of 500+ images.</p>
-        <div class="proj-stack">
-          <span>Flutter</span><span>Flask</span><span>DeepFace</span><span>Firebase</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section skills-section">
-    <div class="section-label"><span class="mono">03 /</span> Technical Skills</div>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h4>Languages</h4>
-        <p>Python, SQL</p>
-      </div>
-      <div class="skill-group">
-        <h4>ML / DL Frameworks</h4>
-        <p>PyTorch, TensorFlow, Hugging Face</p>
-      </div>
-      <div class="skill-group">
-        <h4>LLM & RAG</h4>
-        <p>LangChain, LangGraph, FAISS, Pinecone, ChromaDB</p>
-      </div>
-      <div class="skill-group">
-        <h4>Computer Vision</h4>
-        <p>OpenCV, SAM, DeepFace, Roboflow</p>
-      </div>
-      <div class="skill-group">
-        <h4>Deployment & Optimization</h4>
-        <p>FastAPI, TensorRT, Quantization, Model Compression</p>
-      </div>
-      <div class="skill-group">
-        <h4>MLOps</h4>
-        <p>MLflow, Docker, Airflow, Vertex AI Experiments</p>
-      </div>
-      <div class="skill-group">
-        <h4>Cloud & Monitoring</h4>
-        <p>GCP, Vertex AI, Firebase, Grafana, RAGAS</p>
-      </div>
-      <div class="skill-group">
-        <h4>Automation</h4>
-        <p>n8n, Zapier, Pipedream, Dify</p>
+    <div class="home-actions reveal-fade delay-3">
+      <a href="resume.html" class="cta-btn">
+        <span class="cta-text">View Résumé</span>
+        <span class="cta-arrow">↗</span>
+      </a>
+      <div class="home-links">
+        <a href="https://github.com/MrMashood" target="_blank">GitHub</a>
+        <span class="divider">·</span>
+        <a href="https://linkedin.com/in/YOUR-HANDLE" target="_blank">LinkedIn</a>
+        <span class="divider">·</span>
+        <a href="mailto:mashoodrehman112@gmail.com">Email</a>
       </div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
-    <div class="section-label"><span class="mono">04 /</span> Contact</div>
-    <h2 class="contact-heading">Let's build<br/><em>something great.</em></h2>
-    <p class="contact-sub">Open to full-time roles, freelance projects, or just a good conversation about AI systems.</p>
-    <a href="mailto:mashoodrehman112@gmail.com" class="btn-primary large">
-      mashoodrehman112@gmail.com
-    </a>
-    <div class="contact-links">
-      <a href="tel:+923426229503">+92 342 622 9503</a>
-      <span>·</span>
-      <a href="https://github.com/MrMashood" target="_blank">GitHub</a>
-      <span>·</span>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <div class="home-stack reveal-fade delay-4">
+      <span>PyTorch</span><span>TensorRT</span><span>LangChain</span>
+      <span>Vertex AI</span><span>Docker</span><span>Airflow</span>
+      <span>GCP</span><span>FastAPI</span>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <span class="mono">© 2025 Mashhood Ur Rehman</span>
-    <span class="mono">Islamabad, Pakistan</span>
+  </main>
+
+  <footer class="home-footer reveal-fade delay-4">
+    <span class="mono-sm">© 2025 Mashhood Ur Rehman</span>
+    <span class="mono-sm">+92 342 622 9503</span>
   </footer>
 
+  <script>
+    const canvas = document.getElementById('grid-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, dots = [], mouse = { x: -999, y: -999 };
+    const SPACING = 38, COLOR = 'rgba(255,255,255,';
+
+    function resize() {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+      dots = [];
+      for (let x = SPACING; x < W; x += SPACING)
+        for (let y = SPACING; y < H; y += SPACING)
+          dots.push({ x, y, ox: x, oy: y });
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      const t = Date.now() * 0.0008;
+      dots.forEach(d => {
+        const dx = d.x - mouse.x, dy = d.y - mouse.y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        const repel = Math.max(0, 1 - dist / 130);
+        const wave = Math.sin(d.ox * 0.025 + d.oy * 0.018 + t) * 0.5 + 0.5;
+        const alpha = 0.05 + wave * 0.09 + repel * 0.55;
+        const r = 1.2 + repel * 2.8;
+        ctx.beginPath();
+        ctx.arc(d.x + repel * dx * -0.3, d.y + repel * dy * -0.3, r, 0, Math.PI * 2);
+        ctx.fillStyle = COLOR + alpha + ')';
+        ctx.fill();
+      });
+      requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('resize', resize);
+    window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+    resize(); draw();
+
+    setTimeout(() => {
+      document.querySelectorAll('.reveal-line, .reveal-fade').forEach(el => el.classList.add('visible'));
+    }, 80);
+  </script>
 </body>
 </html>
